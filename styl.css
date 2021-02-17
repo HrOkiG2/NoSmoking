@@ -1,0 +1,94 @@
+/**/
+body{
+    text-align: center;
+}
+
+/**/
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+/**/
+.situation{
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+
+/*吹き出し*/
+.balloon1-left {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+  }
+  
+  .balloon1-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+  
+  .balloon1-left p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+/*カレンダー*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+/**/
+table.calender th{
+    background-color: beige;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.calender td{
+    background-color: beige;
+    padding-bottom: 25px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data{
+    text-align: center;
+    vertical-align: middle;
+    font: bold;
+}
+
+/**/
+table.calender th:first-of-type,table.calender td:first-of-type{
+    background-color: orangered;
+    font: bold;
+}
+
+/**/
+table.calender th:last-of-type,table.calender td:last-of-type{
+    background-color: skyblue;
+    font: bold;
+}
+
+/**/
+table.calender td.today_color{
+    background-color: coral;
+    text-align: left;
+    vertical-align: top;
+}
+
